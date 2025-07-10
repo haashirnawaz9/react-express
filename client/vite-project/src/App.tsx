@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const FetchAPI = async () => {
-      const response = await axios.get("http://localhost:3001/api")
+      const response = await axios.get("https://react-express-8989.onrender.com/api")
       const data = response.data.fruits
       setMessages(data)
       console.log(data)
